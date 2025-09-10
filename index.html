@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
+    <title>Portfolio</title>
+</head>
+<body>
+    <!-- Start Navbar -->
+     <nav>
+        <div class="navbar">
+            <a href="#home" class="nav">Home</a>
+            <a href="#skillss" class="nav">Skills</a>
+            <a href="#projects" class="nav">Projects</a>
+            <a href="#about" class="nav">About</a>
+            <a href="#contact" class="nav">Contact</a>
+        </div>
+     </nav>
+     <!-- End Navbar -->
+      <!-- Start Header -->
+       <header>
+        <div id="home">
+            <div class="hero">
+            <h1>Welcome to My Portfloio</h1>
+            <p>Super excited you made it here! Take a look around and check out my projects</p>
+        </div>
+        <div>
+            <img src="2-Picsart-AiImageEnhancer.png" alt="Youssef Atef Picture" class="youssefimg">
+        </div>
+        </div>
+       </header>
+       <!-- End Header -->
+
+        
+
+
+
+        <!-- Start Main -->
+         <main>
+
+            <!-- Start Skills -->
+             <h2 id="skillss">Skills</h2>
+             <div id="skills">
+                <div class="skill num1">
+                    <img src="logo/html5_logo.png" alt="HTML5">
+                    <h3>HTML5</h3>
+                </div>
+                <div class="skill num2">
+                    <img src="logo/css3_logo.png" alt="Css3">
+                     <h3>CSS3</h3>
+                </div>
+                <div class="skill num3">
+                    <img src="logo/Javascript_logo.png" alt="Java Script">
+                     <h3>JavaScript</h3>
+                </div>
+                <div class="skill num4">
+                    <img src="logo/tailwind_logo.png" alt="Tailwind">
+                     <h3>TypeScript</h3>
+                </div>
+                <div class="skill num5">
+                    <img src="logo/Bootstrap_logo.png" alt="BootStrap">
+                     <h3>BootStrap</h3>
+                </div>
+                <div class="skill num6">
+                   <img src="logo/git_logo.png" alt="HTML5">
+                    <h3>Git</h3>
+                </div>
+                <div class="skill num7">
+                   <img src="logo/github.png" alt="HTML5">
+                    <h3>GitHub</h3>
+                </div>
+                <div class="skill num8">
+                   <img src="logo/Java_Logo.png" alt="HTML5">
+                    <h3>Java</h3>
+                </div>
+             </div>
+             <!-- End Skills -->
+
+
+
+
+             <h2 id="projectss">Projects</h2>
+            <div id="projects">
+                <!-- First Project -->
+                <div class="project">
+                    <img src="Linktree-page_.webp" alt="Linktree Project">
+                    <h3>Linktree Project</h3>
+                    <p>I Create a Copy of my Linktree Page to Make it Easy for Everyone to Contact With Me</p>
+                    <button><a href="https://youssef-atef-20.github.io/Linktree/">Live Demo</a></button>
+                </div>
+                <!-- Second Project -->
+                <div class="project">
+                    <img src="second_project.jpg" alt="Second Project">
+                    <h3>Start Company</h3>
+                    <p>I Create a Copy of my Linktree Page to Make it Easy for Everyone to Contact With Me</p>
+                    <button><a href="https://youssef-atef-20.github.io/project2/">Live Demo</a></button>
+                </div>
+                <!-- Third Project -->
+                <!-- <div class="project">
+                    <img src="Linktree-page_.webp" alt="Linktree Project">
+                    <h3>Linktree Project</h3>
+                    <p>I Create a Copy of my Linktree Page to Make it Easy for Everyone to Contact With Me</p>
+                    <button><a href="https://youssef-atef-20.github.io/Linktree/">Live Demo</a></button>
+                </div> -->
+            </div>
+
+            <!-- About Me Section -->
+             <div id="about">
+                <h2>About Me</h2>
+                <div class="about">
+                    <img src="My Picture.jpg" alt="Youssef Atef Second Page">
+                    <p>Hi, I'm Youssef Atef. I am a Faculty of Science student who Specializes in Software and Multimedia. I am Enthusiastic about Software Engineering and a great Problem Solver. As an inherent Leader, I work best in Calmly and Analytically Challenging Situations, which makes Solution Finding effective. I have Strong Distinguishing Characteristics in my area because I possess Deep Understanding of Difficult Problems and Skillful Navigation through those problems for guiding teams. I strive for Professional Development and I am willing to Utilize my Skills to affect real Change.</p>
+                </div>
+             </div>
+
+
+             <!-- Contact Me Section -->
+             <div id="contact">
+                <h2>Contact With Me</h2>
+                <form action="https://formspree.io/f/mgvzjqpg" method="POST" class="form">
+                <fieldset>
+                
+                    <legend>Please Enter Your Contact Information</legend>
+                    <label for="name">Your Name:</label>
+                    <input type="text" name="name" id="name" required>
+
+                    <label for="phone_number">Phone Number:</label>
+                    <input type="number" id="phone_number" name="phone_number">
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="phone_number" name="email" required>
+                    
+
+                    <label for="message">Your Message</label>
+                    <textarea name="message" id="message"></textarea>
+
+                    <button type="submit">Send</button>
+                    
+                </fieldset>
+                </form>
+             </div>
+         </main>
+         <!-- End Main -->
+</body>
+<script src="script.js"></script>
+</html>
