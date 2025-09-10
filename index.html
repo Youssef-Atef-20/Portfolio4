@@ -1,148 +1,120 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
-    <title>Portfolio</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Youssef Atef | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <style>
+    :root {
+      --main-color:#1A1A40;
+      --secondary-color:#C5C6C7;
+      --accent-color:#FFD700;
+    }
+    * { box-sizing:border-box; margin:0; padding:0 }
+    body { font-family:'Poppins',sans-serif; background:var(--main-color); color:var(--secondary-color); line-height:1.6; scroll-behavior:smooth }
+    nav { display:flex; justify-content:center; gap:2rem; padding:1rem; border:1px solid var(--secondary-color); border-radius:20px; margin:1rem auto; width:80%; backdrop-filter:blur(6px) }
+    nav a { color:var(--secondary-color); text-decoration:none; font-weight:600; transition:color .3s }
+    nav a:hover { color:var(--accent-color) }
+
+    header { display:flex; flex-wrap:wrap; align-items:center; justify-content:center; text-align:center; min-height:90vh; gap:2rem; padding:2rem }
+    header h1 { font-size:clamp(1.8rem, 4vw, 3rem); color:white; margin-bottom:1rem }
+    header p { max-width:500px }
+    header img { width:300px; max-width:80%; border-radius:50%; box-shadow:0 8px 25px #00000066; }
+
+    section { padding:5rem 2rem; text-align:center }
+    h2 { font-size:2rem; color:white; margin-bottom:2rem }
+
+    .skills, .projects { display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); gap:20px; max-width:1000px; margin:0 auto }
+    .skill, .project { background:#2e2e5e; border-radius:15px; padding:20px; box-shadow:0 4px 15px #00000066; transition:transform .3s, box-shadow .3s }
+    .skill:hover, .project:hover { transform:translateY(-8px); box-shadow:0 8px 25px #00000099 }
+    .skill img, .project img { max-width:80px; margin-bottom:10px; border-radius:10px }
+    .project img { max-width:100%; }
+    .project p { font-size:.9rem; margin:10px 0; }
+    .project a { display:inline-block; margin-top:10px; background:var(--accent-color); padding:6px 12px; border-radius:6px; color:#000; text-decoration:none; font-weight:bold }
+
+    .about { display:flex; flex-wrap:wrap; gap:2rem; justify-content:center; align-items:center; max-width:1000px; margin:0 auto }
+    .about img { max-width:300px; border-radius:20px; box-shadow:0 6px 20px #00000080 }
+    .about p { max-width:600px; text-align:left }
+
+    form { max-width:500px; margin:0 auto; background:#2e2e5e; padding:2rem; border-radius:15px; box-shadow:0 4px 15px #00000066 }
+    input,textarea { width:100%; margin-bottom:1rem; padding:.8rem; border:none; border-radius:8px; background:#1a1a40; color:white }
+    button { background:var(--accent-color); border:none; color:#000; font-weight:700; padding:.8rem; width:100%; border-radius:8px; cursor:pointer; transition:transform .2s }
+    button:hover { transform:scale(1.03) }
+
+    @media(max-width:600px){ header{flex-direction:column} .about{flex-direction:column;text-align:center} }
+  </style>
 </head>
 <body>
-    <!-- Start Navbar -->
-     <nav>
-        <div class="navbar">
-            <a href="#home" class="nav">Home</a>
-            <a href="#skillss" class="nav">Skills</a>
-            <a href="#projects" class="nav">Projects</a>
-            <a href="#about" class="nav">About</a>
-            <a href="#contact" class="nav">Contact</a>
-        </div>
-     </nav>
-     <!-- End Navbar -->
-      <!-- Start Header -->
-       <header>
-        <div id="home">
-            <div class="hero">
-            <h1>Welcome to My Portfloio</h1>
-            <p>Super excited you made it here! Take a look around and check out my projects</p>
-        </div>
-        <div>
-            <img src="2-Picsart-AiImageEnhancer.png" alt="Youssef Atef Picture" class="youssefimg">
-        </div>
-        </div>
-       </header>
-       <!-- End Header -->
+  <nav data-aos="fade-down">
+    <a href="#home">Home</a>
+    <a href="#skillss">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
 
-        
+  <header id="home">
+    <div data-aos="fade-right">
+      <h1>Welcome to My Portfolio</h1>
+      <p>Super excited you made it here! Take a look around and check out my projects</p>
+    </div>
+    <img data-aos="fade-left" src="2-Picsart-AiImageEnhancer.png" alt="Youssef Atef Picture">
+  </header>
 
+  <section id="skillss">
+    <h2 data-aos="zoom-in">Skills</h2>
+    <div class="skills">
+      <div class="skill" data-aos="fade-up"><img src="logo/html5_logo.png"><h3>HTML5</h3></div>
+      <div class="skill" data-aos="fade-up" data-aos-delay="100"><img src="logo/css3_logo.png"><h3>CSS3</h3></div>
+      <div class="skill" data-aos="fade-up" data-aos-delay="200"><img src="logo/Javascript_logo.png"><h3>JavaScript</h3></div>
+      <div class="skill" data-aos="fade-up" data-aos-delay="300"><img src="logo/tailwind_logo.png"><h3>TypeScript</h3></div>
+      <div class="skill" data-aos="fade-up" data-aos-delay="400"><img src="logo/Bootstrap_logo.png"><h3>Bootstrap</h3></div>
+      <div class="skill" data-aos="fade-up" data-aos-delay="500"><img src="logo/git_logo.png"><h3>Git</h3></div>
+      <div class="skill" data-aos="fade-up" data-aos-delay="600"><img src="logo/github.png"><h3>GitHub</h3></div>
+      <div class="skill" data-aos="fade-up" data-aos-delay="700"><img src="logo/Java_Logo.png"><h3>Java</h3></div>
+    </div>
+  </section>
 
+  <section id="projects">
+    <h2 data-aos="zoom-in">Projects</h2>
+    <div class="projects">
+      <div class="project" data-aos="flip-left">
+        <img src="Linktree-page_.webp"><h3>Linktree Project</h3>
+        <p>I Create a Copy of my Linktree Page to Make it Easy for Everyone to Contact With Me</p>
+        <a href="https://youssef-atef-20.github.io/Linktree/">Live Demo</a>
+      </div>
+      <div class="project" data-aos="flip-right">
+        <img src="second_project.jpg"><h3>Start Company</h3>
+        <p>I Create a Copy of my Linktree Page to Make it Easy for Everyone to Contact With Me</p>
+        <a href="https://youssef-atef-20.github.io/project2/">Live Demo</a>
+      </div>
+    </div>
+  </section>
 
-        <!-- Start Main -->
-         <main>
+  <section id="about">
+    <h2 data-aos="zoom-in">About Me</h2>
+    <div class="about" data-aos="fade-up">
+      <img src="My Picture.jpg">
+      <p>Hi, I'm Youssef Atef. I am a Faculty of Science student who specializes in Software and Multimedia. I am enthusiastic about Software Engineering and a great problem solver. As an inherent leader, I work best in calmly and analytically challenging situations, which makes solution finding effective. I strive for professional development and I am willing to utilize my skills to affect real change.</p>
+    </div>
+  </section>
 
-            <!-- Start Skills -->
-             <h2 id="skillss">Skills</h2>
-             <div id="skills">
-                <div class="skill num1">
-                    <img src="logo/html5_logo.png" alt="HTML5">
-                    <h3>HTML5</h3>
-                </div>
-                <div class="skill num2">
-                    <img src="logo/css3_logo.png" alt="Css3">
-                     <h3>CSS3</h3>
-                </div>
-                <div class="skill num3">
-                    <img src="logo/Javascript_logo.png" alt="Java Script">
-                     <h3>JavaScript</h3>
-                </div>
-                <div class="skill num4">
-                    <img src="logo/tailwind_logo.png" alt="Tailwind">
-                     <h3>TypeScript</h3>
-                </div>
-                <div class="skill num5">
-                    <img src="logo/Bootstrap_logo.png" alt="BootStrap">
-                     <h3>BootStrap</h3>
-                </div>
-                <div class="skill num6">
-                   <img src="logo/git_logo.png" alt="HTML5">
-                    <h3>Git</h3>
-                </div>
-                <div class="skill num7">
-                   <img src="logo/github.png" alt="HTML5">
-                    <h3>GitHub</h3>
-                </div>
-                <div class="skill num8">
-                   <img src="logo/Java_Logo.png" alt="HTML5">
-                    <h3>Java</h3>
-                </div>
-             </div>
-             <!-- End Skills -->
+  <section id="contact">
+    <h2 data-aos="zoom-in">Contact With Me</h2>
+    <form data-aos="fade-up" action="https://formspree.io/f/mgvzjqpg" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="number" name="phone_number" placeholder="Phone Number">
+      <input type="email" name="email" placeholder="Email" required>
+      <textarea name="message" placeholder="Your Message"></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
 
-
-
-
-             <h2 id="projectss">Projects</h2>
-            <div id="projects">
-                <!-- First Project -->
-                <div class="project">
-                    <img src="Linktree-page_.webp" alt="Linktree Project">
-                    <h3>Linktree Project</h3>
-                    <p>I Create a Copy of my Linktree Page to Make it Easy for Everyone to Contact With Me</p>
-                    <button><a href="https://youssef-atef-20.github.io/Linktree/">Live Demo</a></button>
-                </div>
-                <!-- Second Project -->
-                <div class="project">
-                    <img src="second_project.jpg" alt="Second Project">
-                    <h3>Start Company</h3>
-                    <p>I Create a Copy of my Linktree Page to Make it Easy for Everyone to Contact With Me</p>
-                    <button><a href="https://youssef-atef-20.github.io/project2/">Live Demo</a></button>
-                </div>
-                <!-- Third Project -->
-                <!-- <div class="project">
-                    <img src="Linktree-page_.webp" alt="Linktree Project">
-                    <h3>Linktree Project</h3>
-                    <p>I Create a Copy of my Linktree Page to Make it Easy for Everyone to Contact With Me</p>
-                    <button><a href="https://youssef-atef-20.github.io/Linktree/">Live Demo</a></button>
-                </div> -->
-            </div>
-
-            <!-- About Me Section -->
-             <div id="about">
-                <h2>About Me</h2>
-                <div class="about">
-                    <img src="My Picture.jpg" alt="Youssef Atef Second Page">
-                    <p>Hi, I'm Youssef Atef. I am a Faculty of Science student who Specializes in Software and Multimedia. I am Enthusiastic about Software Engineering and a great Problem Solver. As an inherent Leader, I work best in Calmly and Analytically Challenging Situations, which makes Solution Finding effective. I have Strong Distinguishing Characteristics in my area because I possess Deep Understanding of Difficult Problems and Skillful Navigation through those problems for guiding teams. I strive for Professional Development and I am willing to Utilize my Skills to affect real Change.</p>
-                </div>
-             </div>
-
-
-             <!-- Contact Me Section -->
-             <div id="contact">
-                <h2>Contact With Me</h2>
-                <form action="https://formspree.io/f/mgvzjqpg" method="POST" class="form">
-                <fieldset>
-                
-                    <legend>Please Enter Your Contact Information</legend>
-                    <label for="name">Your Name:</label>
-                    <input type="text" name="name" id="name" required>
-
-                    <label for="phone_number">Phone Number:</label>
-                    <input type="number" id="phone_number" name="phone_number">
-
-                    <label for="email">Email:</label>
-                    <input type="email" id="phone_number" name="email" required>
-                    
-
-                    <label for="message">Your Message</label>
-                    <textarea name="message" id="message"></textarea>
-
-                    <button type="submit">Send</button>
-                    
-                </fieldset>
-                </form>
-             </div>
-         </main>
-         <!-- End Main -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 900, once: true, easing:'ease-out-cubic' });
+  </script>
 </body>
-<script src="script.js"></script>
 </html>
