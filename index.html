@@ -6,6 +6,7 @@
   <title>Youssef Atef | Portfolio</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
   <style>
     :root {
       --main-color:#1A1A40;
@@ -25,7 +26,7 @@
       margin:1rem auto;
       width:80%;
       backdrop-filter:blur(6px);
-      /* يخلي اللينكات تلف تحت بعض لو الشاشة صغرت */
+      flex-wrap:wrap; /* يخلي اللينكات تلف تحت بعض لو الشاشة صغرت */
     }
     
     nav a {
@@ -66,16 +67,23 @@
     @media(max-width:700px){
       nav { gap:1rem; padding:0.7rem; }
       nav a { font-size:0.9rem; }
-      .logo { width: 45px; }
+      .logo { width: 100px; }
     }
 
+
+    @media(max-width:600px){ 
+      header{flex-direction:column} 
+      .about{flex-direction:column;text-align:center} 
+      .logo { width: 75px; } 
+    }
+    
     @media(max-width:500px){
       nav { flex-direction:column; align-items:center; gap:0.5rem; }
       nav a { font-size:0.85rem; }
-      .logo { width: 30px; }
+      .logo { width: 50px; }
     }
 
-    @media(max-width:600px){ header{flex-direction:column} .about{flex-direction:column;text-align:center} .logo { width: 100px; }  }
+    
   </style>
 </head>
 <body>
@@ -94,14 +102,6 @@
     </div>
     <img data-aos="fade-left" src="2-Picsart-AiImageEnhancer.png" alt="Youssef Atef Picture">
   </header>
-
-  <section id="about">
-    <h2 data-aos="zoom-in">About Me</h2>
-    <div class="about" data-aos="fade-up">
-      <img src="My Picture.jpg">
-      <p>I’m Youssef Atef, a Software and Multimedia student passionate about software engineering and problem-solving. I thrive in challenging situations where I can approach problems calmly and analytically, finding efficient solutions and guiding others toward results. With a strong ability to navigate complex issues, I naturally take the lead and help teams stay focused and productive. I am committed to continuous learning and professional growth, and I aim to use my skills to create solutions that have a real-world impact</p>
-    </div>
-  </section>
 
   <section id="skillss">
     <h2 data-aos="zoom-in">Skills</h2>
@@ -133,10 +133,17 @@
     </div>
   </section>
 
+  <section id="about">
+    <h2 data-aos="zoom-in">About Me</h2>
+    <div class="about" data-aos="fade-up">
+      <img src="My Picture.jpg">
+      <p>Hi, I'm Youssef Atef. I am a Faculty of Science student who specializes in Software and Multimedia. I am enthusiastic about Software Engineering and a great problem solver. As an inherent leader, I work best in calmly and analytically challenging situations, which makes solution finding effective. I strive for professional development and I am willing to utilize my skills to affect real change.</p>
+    </div>
+  </section>
 
   <section id="contact">
     <h2 data-aos="zoom-in">Contact With Me</h2>
-    <form data-aos="fade-up" action="https://formspree.io/f/mgvzjqpg" method="POST">
+    <form data-aos="zoom-in" action="https://formspree.io/f/mgvzjqpg" method="POST">
       <input type="text" name="name" placeholder="Your Name" required>
       <input type="number" name="phone_number" placeholder="Phone Number">
       <input type="email" name="email" placeholder="Email" required>
@@ -144,7 +151,7 @@
       <button type="submit">Send</button>
     </form>
 
-     <footer>
+    <footer>
       <div class="icons">
             <a href="https://www.linkedin.com/in/youssefatef20"><img src="Black_LinkedIn_Icon-removebg-preview.png" alt="LinkedIn Picture" class="logo linkedin"></a> 
             <a href="https://wa.me/qr/VZCPTO7S4LQMH1"><img src="WhatsApp_icon-removebg-preview.png" alt="whatsapp Icon" class="logo whatsapp"></a> 
@@ -155,14 +162,7 @@
 
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
-    AOS.init({ duration: 900, once: false, easing:'ease-out-cubic' });
+    AOS.init({ duration: 900,  easing:'ease-out-cubic' });
   </script>
 </body>
 </html>
-
-
-
-
-
-
-
