@@ -60,3 +60,8 @@ sr.reveal('#contact h2', {
         el.classList.add('start-animation');
     }
 });
+
+
+window.addEventListener('load', () => {
+  AOS.init({ duration: 900, easing:'ease-out-cubic' });
+});
