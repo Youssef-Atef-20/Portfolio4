@@ -47,6 +47,11 @@
     section { padding:5rem 2rem; text-align:center }
     h2 { font-size:2rem; color:white; margin-bottom:2rem }
 
+    [data-aos][data-aos].aos-animate {
+  opacity: 1 !important;
+  transform: none !important;
+}
+
     .skills, .projects { display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); gap:20px; max-width:1000px; margin:0 auto }
     .skill, .project { background:#2e2e5e; border-radius:15px; padding:20px; box-shadow:0 4px 15px #00000066; transition:transform .3s, box-shadow .3s }
     .skill:hover, .project:hover { transform:translateY(-8px); box-shadow:0 8px 25px #00000099 }
@@ -97,11 +102,11 @@
   </nav>
 
   <header id="home">
-    <div>
+    <div data-aos="fade-right">
       <h1>Welcome to My Portfolio</h1>
       <p>Super excited you made it here! Take a look around and check out my projects</p>
     </div>
-    <img  src="2-Picsart-AiImageEnhancer.webp" alt="Youssef Atef Picture" fetchpriority="high">
+    <img  src="2-Picsart-AiImageEnhancer.webp" alt="Youssef Atef Picture" fetchpriority="high" data-aos="fade-left">
   </header>
 
   <section id="skillss">
@@ -168,6 +173,7 @@
   </script>
 </body>
 </html>
+
 
 
 
