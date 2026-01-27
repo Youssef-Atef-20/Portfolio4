@@ -186,8 +186,10 @@ footer{
     justify-content: center;
     align-items: center;
     gap: 40px;
+    margin-top: -90px;
 }
 
 .logo{
   width: 75px;
+  
 }
