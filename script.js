@@ -1,3 +1,17 @@
+console.log("SCRIPT LOADED");
+
+const form = document.getElementById("contact-form");
+
+console.log(form);
+
+form.addEventListener("submit", function (e) {
+  e.preventDefault();
+  console.log("FORM SUBMITTED VIA JS");
+});
+
+
+
+
 // 1️⃣ تهيئة ScrollReveal
 const sr = ScrollReveal({
     distance: '0px',
@@ -67,7 +81,7 @@ window.addEventListener('load', () => {
 });
 
 
-const form = document.getElementById("contact-form");
+
 
 form.addEventListener("submit", async (e) => {
   e.preventDefault(); // اهم سطر
