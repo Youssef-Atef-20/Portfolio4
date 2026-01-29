@@ -65,3 +65,36 @@ sr.reveal('#contact h2', {
 window.addEventListener('load', () => {
   AOS.init({ duration: 900, easing:'ease-out-cubic' });
 });
+
+
+
+
+const form = document.getElementById("contact-form");
+
+form.addEventListener("submit", async (e) => {
+  e.preventDefault();
+
+  const formData = new FormData(form);
+  const data = {
+    name: formData.get("name"),
+    email: formData.get("email"),
+    message: formData.get("message"),
+  };
+
+  const res = await fetch("/api/contact", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(data),
+  });
+
+  const result = await res.json();
+
+  if (result.success) {
+    alert("Message sent successfully");
+    form.reset();
+  } else {
+    alert("Something went wrong");
+  }
+});
