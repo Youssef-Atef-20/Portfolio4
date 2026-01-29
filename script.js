@@ -1,17 +1,3 @@
-console.log("SCRIPT LOADED");
-
-const form = document.getElementById("contact-form");
-
-console.log(form);
-
-form.addEventListener("submit", function (e) {
-  e.preventDefault();
-  console.log("FORM SUBMITTED VIA JS");
-});
-
-
-
-
 // 1️⃣ تهيئة ScrollReveal
 const sr = ScrollReveal({
     distance: '0px',
@@ -81,33 +67,3 @@ window.addEventListener('load', () => {
 });
 
 
-
-
-form.addEventListener("submit", async (e) => {
-  e.preventDefault(); // اهم سطر
-
-  const formData = new FormData(form);
-
-  const data = {
-    name: formData.get("name"),
-    email: formData.get("email"),
-    message: formData.get("message"),
-  };
-
-  const res = await fetch("/api/contact", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify(data),
-  });
-
-  const result = await res.json();
-
-  if (result.success) {
-    alert("Message sent successfully");
-    form.reset();
-  } else {
-    alert("Error sending message");
-  }
-});
