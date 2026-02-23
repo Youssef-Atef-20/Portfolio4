@@ -282,23 +282,52 @@
     }
 
 
-    .cv-btn {
-      display: inline-block;
-      margin-top: 20px;
-      padding: 12px 20px;
-      background: #FFD700;
-      color: #000000;
-      font-weight: bold;
-      border-radius: 8px;
-      text-decoration: none;
-      transition: transform 0.2s, box-shadow 0.2s;
-      max-width: 80%;
-    }
+   .cv-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 22px;
+  background: #FFD700;
+  color: #000000;
+  font-weight: bold;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: all 0.35s ease;
+  position: relative;
+  overflow: hidden;
+}
 
-    .cv-btn:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-    }
+/* glow light */
+.cv-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -120%;
+  width: 120%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(255,255,255,0.6),
+    transparent
+  );
+  transition: 0.6s;
+}
+
+/* hover effects */
+.cv-btn:hover {
+  transform: translateY(-5px) scale(1.03);
+
+  box-shadow:
+    0 0 8px #ffe100,
+    0 0 18px #ffe100,
+    0 0 35px #ffd000,
+    0 0 20px #ffd70099;
+}
+
+/* moving shine */
+.cv-btn:hover::before {
+  left: 120%;
+}
   </style>
 </head>
 
