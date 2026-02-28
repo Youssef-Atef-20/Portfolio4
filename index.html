@@ -5,19 +5,22 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description"
-    content="Personal Portfolio Showcasing Projects Skills and Experience in Software Development">
-  <title>Youssef Atef | Portfolio</title>
+    content="Front End React Developer building responsive web applications and modern UI interfaces. Explore live projects, demos, and source code.">
+  <title>Youssef Atef – Front End React Developer | Web Applications & UI Projects</title>
 
 
-  <meta property="og:title" content="Youssef Atef | Portfolio">
+  <meta property="og:title" content="Youssef Atef – Front End React Developer">
   <meta property="og:description"
-    content="Passionate Software Developer focused on building clean and responsive web applications">
+    content="Front End React Developer building responsive web applications and modern UI interfaces. View projects and live demos.">
   <meta property="og:image" content="https://youssef-atef-portfolio.vercel.app/YA2.jpeg">
-  <meta name="twitter:image" content="https://youssef-atef-portfolio.vercel.app/YA2.jpeg">
+<meta name="twitter:image" content="https://youssef-atef-portfolio.vercel.app/YA2.jpeg">
   <meta name="twitter:card" content="summary_large_image">
   <meta property="og:url" content="https://youssef-atef-portfolio.vercel.app/">
   <meta property="og:type" content="website">
   <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:type" content="image/jpeg">
 
 
   <script type="application/ld+json">
@@ -27,7 +30,7 @@
   "name": "Youssef Atef",
   "url": "https://youssef-atef-portfolio.vercel.app/",
   "image": "https://youssef-atef-portfolio.vercel.app/YA2.jpeg",
-  "jobTitle": "Software Developer",
+  "jobTitle": "Front End React Developer",
   "sameAs": [
     "https://www.linkedin.com/in/youssefatef20"
   ]
@@ -39,7 +42,9 @@
   <link rel="stylesheet" href="style.css">
   <link rel="icon" href="icon.webp">
   <link rel="canonical" href="https://youssef-atef-portfolio.vercel.app/">
-
+  <meta name="author" content="Youssef Atef">
+  <meta name="keywords"
+    content="Front End Developer, React Developer, JavaScript Developer, Web Developer Portfolio, Youssef Atef">
 
 
   <style>
@@ -189,6 +194,7 @@
     }
 
     .about img {
+      width: 60%;
       max-width: 300px;
       border-radius: 20px;
       box-shadow: 0 6px 20px #00000080;
@@ -282,52 +288,62 @@
     }
 
 
-   .cv-btn {
-  display: inline-block;
-  margin-top: 20px;
-  padding: 12px 22px;
-  background: #FFD700;
-  color: #000000;
-  font-weight: bold;
-  border-radius: 10px;
-  text-decoration: none;
-  transition: all 0.35s ease;
-  position: relative;
-  overflow: hidden;
-}
+    .cv-btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 22px;
+      background: #FFD700;
+      color: #000000;
+      font-weight: bold;
+      border-radius: 10px;
+      text-decoration: none;
+      transition: all 0.35s ease;
+      position: relative;
+      overflow: hidden;
+    }
 
-/* glow light */
-.cv-btn::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: -120%;
-  width: 120%;
-  height: 100%;
-  background: linear-gradient(
-    120deg,
-    transparent,
-    rgba(255,255,255,0.6),
-    transparent
-  );
-  transition: 0.6s;
-}
+    /* glow light */
+    .cv-btn::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -120%;
+      width: 120%;
+      height: 100%;
+      background: linear-gradient(120deg,
+          transparent,
+          rgba(255, 255, 255, 0.6),
+          transparent);
+      transition: 0.6s;
+    }
 
-/* hover effects */
-.cv-btn:hover {
-  transform: translateY(-5px) scale(1.03);
+    /* hover effects */
+    .cv-btn:hover {
+      transform: translateY(-5px) scale(1.03);
 
-  box-shadow:
-    0 0 8px #ffe100,
-    0 0 18px #ffe100,
-    0 0 35px #ffd000,
-    0 0 20px #ffd70099;
-}
+      box-shadow:
+        0 0 8px #ffe100,
+        0 0 18px #ffe100,
+        0 0 35px #ffd000,
+        0 0 20px #ffd70099;
+    }
 
-/* moving shine */
-.cv-btn:hover::before {
-  left: 120%;
-}
+    /* moving shine */
+    .cv-btn:hover::before {
+      left: 120%;
+    }
+
+    #skillss h2 {
+      font-size: 180%;
+      margin-bottom: 5%;
+      color: #ffffff;
+    }
+
+    #projects h2 {
+      font-size: 180%;
+      margin-bottom: 5%;
+      color: #ffffff;
+    }
   </style>
 </head>
 
@@ -342,18 +358,23 @@
   </nav>
 
   <header id="home">
-    <img data-aos="fade-left" src="2-Picsart-AiImageEnhancer.webp" alt="Youssef Atef Picture" fetchpriority="high">
+    <img src="2-Picsart-AiImageEnhancer2.webp" alt="Youssef Atef Front End React Developer" loading="eager"
+      fetchpriority="high">
     <div>
-      <h1 data-aos="fade-right">Welcome to My Portfolio</h1>
-      <p data-aos="fade-right">Super Excited you made it Here! Take a Look Around and Check out My Projects</p>
-      <a href="Youssef Atef React Frontend Developer Cv.pdf" data-aos="fade-left" download class="cv-btn">Download My CV</a>
+      <h1>Youssef Atef - Front End React Developer</h1>
+      <p data-aos="fade-right">I build responsive web applications, dashboards, and dynamic websites for businesses and
+        startups</p>
+      <a href="Youssef Atef React Frontend Developer Cv.pdf" data-aos="fade-left" download class="cv-btn">View My
+        Resume</a>
     </div>
   </header>
 
 
   <main>
     <section id="skillss">
-      <h2 data-aos="zoom-in">Skills</h2>
+      <h2 data-aos="zoom-in">
+        Technical Skills & Technologies
+      </h2>
 
       <div class="skills">
         <div class="skill" data-aos="fade-up">
@@ -409,28 +430,26 @@
     </section>
 
     <section id="projects">
-      <h2 data-aos="zoom-in">Projects</h2>
+      <h2 data-aos="zoom-in">Web Development Projects</h2>
 
       <div class="projects">
-        <div class="project" data-aos="flip-left">
-          <img src="Linktree-page_.webp" alt="Linktree">
-          <h3>Linktree Project</h3>
-          <p>I Create a Copy of my Linktree Page to Make it Easy for Everyone to Contact With Me</p>
-          <a href="https://linktree-nine-gamma.vercel.app/" target="_blank" rel="noopener noreferrer">Live Demo</a>
-        </div>
 
         <div class="project" data-aos="flip-right">
-          <img src="the_updated_picture.webp" alt="Start Company">
-          <h3>Start Company</h3>
+          <img src="the_updated_picture.webp" alt="Digital Agency Business Website Project">
+          <h3>Digital Agency Business Website</h3>
           <p>A corporate website for a digital agency offering smart business solutions and innovative strategies</p>
           <a href="https://start-company.vercel.app/" target="_blank" rel="noopener noreferrer">Live Demo</a>
+          <a href="https://github.com/Youssef-Atef-20/Start-Company" target="_blank" rel="noopener noreferrer">Source
+            Code</a>
         </div>
 
         <div class="project" data-aos="flip-right">
-          <img src="Atm System.webp" alt="Simple Bank System">
-          <h3>Simple Bank System</h3>
+          <img src="Atm System.webp" alt="Web Based ATM Banking System Simulation">
+          <h3>Web Based ATM Banking System Simulation</h3>
           <p>A web-based ATM simulator for deposits, withdrawals, and balance inquiries</p>
           <a href="https://software-engineering-eta.vercel.app/" target="_blank" rel="noopener noreferrer">Live Demo</a>
+          <a href="https://github.com/Youssef-Atef-20/Software-Engineering" target="_blank"
+            rel="noopener noreferrer">Source Code</a>
         </div>
 
         <div class="project" data-aos="flip-right">
@@ -438,13 +457,17 @@
           <h3>Hot Deals E-Commerce</h3>
           <p>A full-stack e-commerce app with an integrated loyalty program for a personalized shopping experience</p>
           <a href="https://e-commerce-lake-chi.vercel.app/" target="_blank" rel="noopener noreferrer">Live Demo</a>
+          <a href="https://github.com/Youssef-Atef-20/E-Commerce" target="_blank" rel="noopener noreferrer">Source
+            Code</a>
         </div>
 
         <div class="project" data-aos="flip-right">
-          <img src="quranKareem.webp" alt="Quran Kareem Project">
+          <img src="quranKareem.webp" alt="Quran Web Application React Project">
           <h3>Quran Kareem</h3>
           <p>A modern Quran web app with organized surah navigation and a clean, user-friendly interface</p>
           <a href="https://quran-kareem-ya-21.vercel.app/" target="_blank" rel="noopener noreferrer">Live Demo</a>
+          <a href="https://github.com/Youssef-Atef-20/Quran-Kareem" target="_blank" rel="noopener noreferrer">Source
+            Code</a>
         </div>
       </div>
     </section>
@@ -453,19 +476,18 @@
       <h2 data-aos="zoom-in">About Me</h2>
 
       <div class="about" data-aos="fade-up">
-        <img src="My Picture.webp" alt="Youssef Atef Picture">
+        <img src="My Picture.webp" alt="Youssef Atef Front End React Developer">
         <p>
-          Hi, I'm Youssef Atef. I am a Faculty of Science student who specializes in Software and Multimedia.
-          I am enthusiastic about Software Engineering and a great problem solver.
-          As an inherent leader, I work best in calmly and analytically challenging situations,
-          which makes solution finding effective.
-          I strive for professional development and I am willing to utilize my skills to affect real change.
-        </p>
+          I am a Front End React Developer focused on building responsive and user friendly web applications using
+          modern JavaScript technologies. I create interactive interfaces, dashboards, and dynamic websites while
+          following clean code practices and reusable component architecture. I work with React, JavaScript, TypeScript,
+          and REST APIs, with strong attention to performance, usability, and accessibility. I enjoy turning ideas into
+          real products and delivering reliable, maintainable solutions.</p>
       </div>
     </section>
 
     <section id="contact">
-      <h2 data-aos="zoom-in">Contact With Me</h2>
+      <h2 data-aos="zoom-in">Get In Touch</h2>
 
       <form data-aos="zoom-in" action="https://formsubmit.co/hh3928850@gmail.com" method="POST">
         <input type="text" name="name" placeholder="Your Name" required>
@@ -474,7 +496,9 @@
         <textarea name="message" placeholder="Your Message"></textarea>
         <button type="submit">Send</button>
       </form>
+    </section>
   </main>
+
   <footer>
     <div class="icons">
       <a href="https://www.linkedin.com/in/youssefatef20" target="_blank">
@@ -488,14 +512,17 @@
       </a>
     </div>
   </footer>
-  </section>
+
 
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
     AOS.init({
       duration: 900,
-      easing: 'ease-out-cubic'
+      easing: 'ease-out-cubic',
+      once: false
     });
+
+    window.addEventListener('load', AOS.refresh);
   </script>
 
 
