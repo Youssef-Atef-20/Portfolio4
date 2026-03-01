@@ -540,16 +540,15 @@
       e.preventDefault();
 
       const target = document.querySelector(this.getAttribute('href'));
+      const offsetTop = target.offsetTop;
 
-      target.scrollIntoView({
-        behavior: 'smooth',
-        block: 'start'
+      window.scrollTo({
+        top: offsetTop - 20,
+        behavior: 'smooth'
       });
     });
   });
 </script>
-
-
 
 
 
