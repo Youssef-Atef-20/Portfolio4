@@ -372,6 +372,25 @@
       margin-bottom: 5%;
       color: #ffffff;
     }
+
+    .typewriter-container {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 2.2rem;
+    }
+
+    .typewriter-cursor {
+      color: var(--accent-color);
+      animation: blink 0.75s step-end infinite;
+      font-weight: bold;
+      margin-left: 4px;
+    }
+
+    @keyframes blink {
+      from, to { color: transparent }
+      50% { color: var(--accent-color); }
+    }
   </style>
 </head>
 
@@ -390,7 +409,7 @@
       fetchpriority="high" data-aos="fade-left">
     <div>
       <h1 data-aos="fade-right">Youssef Atef</h1>
-      <h2 data-aos="fade-right">Front End React Developer</h2>
+      <h2 data-aos="fade-right" class="typewriter-container"><span id="typewriter"></span><span class="typewriter-cursor">|</span></h2>
       <p data-aos="fade-right">I build responsive web applications, dashboards, and dynamic websites for businesses and
         startups</p>
       <a href="Youssef Atef React Frontend Developer CV.pdf" data-aos="fade-left" download class="cv-btn">View My
@@ -589,10 +608,47 @@
     });
   </script>
 
-
-
-
-
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const words = [
+        "Front End React Developer",
+        "Software Engineer",
+        "UI/UX Implementation Expert"
+      ];
+      let wordIndex = 0;
+      let charIndex = 0;
+      let isDeleting = false;
+      const typewriterEl = document.getElementById('typewriter');
+      
+      function type() {
+        const currentWord = words[wordIndex];
+        
+        if (isDeleting) {
+          typewriterEl.textContent = currentWord.substring(0, charIndex - 1);
+          charIndex--;
+        } else {
+          typewriterEl.textContent = currentWord.substring(0, charIndex + 1);
+          charIndex++;
+        }
+        
+        let typeSpeed = isDeleting ? 40 : 80;
+        
+        if (!isDeleting && charIndex === currentWord.length) {
+          typeSpeed = 2000; // Pause at full word
+          isDeleting = true;
+        } else if (isDeleting && charIndex === 0) {
+          isDeleting = false;
+          wordIndex = (wordIndex + 1) % words.length;
+          typeSpeed = 500; // Pause before typing next word
+        }
+        
+        setTimeout(type, typeSpeed);
+      }
+      
+      // Start typing effect
+      setTimeout(type, 1000);
+    });
+  </script>
 
 </body>
 
