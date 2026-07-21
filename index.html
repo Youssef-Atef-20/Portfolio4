@@ -3,16 +3,22 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#1A1A40">
   <meta name="description" content="Front End React Developer building responsive web applications and modern UI interfaces. Explore live projects, demos, and source code.">
   <title>Youssef Atef | Front End React Developer Portfolio</title>
+
+  <!-- Preload Critical Resources (LCP) -->
+  <link rel="preload" as="image" href="2-Picsart-AiImageEnhancer2.webp">
 
   <!-- Open Graph -->
   <meta property="og:title" content="Youssef Atef - Front End React Developer">
   <meta property="og:description" content="Front End React Developer building responsive web applications and modern UI interfaces. View projects and live demos.">
   <meta property="og:image" content="https://youssef-atef-portfolio.vercel.app/Youssef-Atef-Picture.webp">
   <meta property="og:image:secure_url" content="https://youssef-atef-portfolio.vercel.app/Youssef-Atef-Picture.webp">
+  <meta property="og:image:width" content="800">
+  <meta property="og:image:height" content="800">
   <meta property="og:url" content="https://youssef-atef-portfolio.vercel.app/">
-  <meta property="og:type" content="website">
+  <meta property="og:type" content="profile">
   <meta property="og:site_name" content="Youssef Atef Portfolio">
 
   <!-- Twitter (X) -->
@@ -20,6 +26,8 @@
   <meta name="twitter:title" content="Youssef Atef - Front End React Developer">
   <meta name="twitter:description" content="Front End React Developer building responsive web applications and modern UI interfaces.">
   <meta name="twitter:image" content="https://youssef-atef-portfolio.vercel.app/Youssef-Atef-Picture.webp">
+  <meta name="twitter:creator" content="@youssefatef">
+  <meta name="twitter:site" content="@youssefatef">
 
   <!-- SEO -->
   <meta name="robots" content="index, follow, max-image-preview:large">
@@ -30,13 +38,46 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Youssef Atef",
-    "url": "https://youssef-atef-portfolio.vercel.app/",
-    "image": "https://youssef-atef-portfolio.vercel.app/YA2.jpeg",
-    "jobTitle": "Front End React Developer",
-    "sameAs": [
-      "https://www.linkedin.com/in/youssefatef20"
+    "@graph": [
+      {
+        "@type": "Person",
+        "@id": "https://youssef-atef-portfolio.vercel.app/#person",
+        "name": "Youssef Atef",
+        "url": "https://youssef-atef-portfolio.vercel.app/",
+        "image": "https://youssef-atef-portfolio.vercel.app/Youssef-Atef-Picture.webp",
+        "jobTitle": "Front End React Developer",
+        "description": "Front End React Developer specializing in building responsive, high-performance web applications and modern UI interfaces.",
+        "email": "hh3928850@gmail.com",
+        "sameAs": [
+          "https://www.linkedin.com/in/youssefatef20",
+          "https://github.com/Youssef-Atef-20"
+        ],
+        "knowsAbout": ["React", "JavaScript", "TypeScript", "HTML5", "CSS3", "Frontend Web Development", "Tailwind CSS"]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://youssef-atef-portfolio.vercel.app/#website",
+        "url": "https://youssef-atef-portfolio.vercel.app/",
+        "name": "Youssef Atef Portfolio",
+        "description": "Portfolio of Youssef Atef, a Front End React Developer.",
+        "publisher": {
+          "@id": "https://youssef-atef-portfolio.vercel.app/#person"
+        },
+        "inLanguage": "en-US"
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://youssef-atef-portfolio.vercel.app/#webpage",
+        "url": "https://youssef-atef-portfolio.vercel.app/",
+        "name": "Youssef Atef | Front End React Developer Portfolio",
+        "isPartOf": {
+          "@id": "https://youssef-atef-portfolio.vercel.app/#website"
+        },
+        "about": {
+          "@id": "https://youssef-atef-portfolio.vercel.app/#person"
+        },
+        "inLanguage": "en-US"
+      }
     ]
   }
   </script>
@@ -90,7 +131,7 @@
             <a href="#projects" class="btn btn-secondary">View Projects</a>
           </div>
         </div>
-        <img src="2-Picsart-AiImageEnhancer2.webp" alt="Youssef Atef - Front End React Developer" class="hero-image" loading="eager" fetchpriority="high" data-aos="fade-left">
+        <img src="2-Picsart-AiImageEnhancer2.webp" alt="Youssef Atef - Front End React Developer" class="hero-image" width="350" height="350" loading="eager" fetchpriority="high" data-aos="fade-left">
       </div>
     </section>
 
@@ -99,43 +140,43 @@
         <h2 data-aos="zoom-in">Technical Skills & Technologies</h2>
         <div class="skills-grid">
           <div class="skill-card" data-aos="fade-up">
-            <img src="logo/html5_logo.webp" alt="HTML5 Logo">
+            <img src="logo/html5_logo.webp" alt="HTML5 Logo" width="50" height="50" loading="lazy">
             <h3>HTML5</h3>
           </div>
           <div class="skill-card" data-aos="fade-up" data-aos-delay="50">
-            <img src="logo/css3_logo.webp" alt="CSS3 Logo">
+            <img src="logo/css3_logo.webp" alt="CSS3 Logo" width="50" height="50" loading="lazy">
             <h3>CSS3</h3>
           </div>
           <div class="skill-card" data-aos="fade-up" data-aos-delay="100">
-            <img src="logo/Javascript_logo.webp" alt="JavaScript Logo">
+            <img src="logo/Javascript_logo.webp" alt="JavaScript Logo" width="50" height="50" loading="lazy">
             <h3>JavaScript</h3>
           </div>
           <div class="skill-card" data-aos="fade-up" data-aos-delay="150">
-            <img src="logo/TypeScript.webp" alt="TypeScript Logo">
+            <img src="logo/TypeScript.webp" alt="TypeScript Logo" width="50" height="50" loading="lazy">
             <h3>TypeScript</h3>
           </div>
           <div class="skill-card" data-aos="fade-up" data-aos-delay="200">
-            <img src="logo/React-icon.svg.webp" alt="React Logo">
+            <img src="logo/React-icon.svg.webp" alt="React Logo" width="50" height="50" loading="lazy">
             <h3>React</h3>
           </div>
           <div class="skill-card" data-aos="fade-up" data-aos-delay="250">
-            <img src="logo/tailwind.webp" alt="Tailwind CSS Logo">
+            <img src="logo/tailwind.webp" alt="Tailwind CSS Logo" width="50" height="50" loading="lazy">
             <h3>Tailwind</h3>
           </div>
           <div class="skill-card" data-aos="fade-up" data-aos-delay="300">
-            <img src="logo/Bootstrap_logo.webp" alt="Bootstrap Logo">
+            <img src="logo/Bootstrap_logo.webp" alt="Bootstrap Logo" width="50" height="50" loading="lazy">
             <h3>Bootstrap</h3>
           </div>
           <div class="skill-card" data-aos="fade-up" data-aos-delay="350">
-            <img src="logo/Java_Logo.webp" alt="Java Logo">
+            <img src="logo/Java_Logo.webp" alt="Java Logo" width="50" height="50" loading="lazy">
             <h3>Java</h3>
           </div>
           <div class="skill-card" data-aos="fade-up" data-aos-delay="400">
-            <img src="logo/git_logo.webp" alt="Git Logo">
+            <img src="logo/git_logo.webp" alt="Git Logo" width="50" height="50" loading="lazy">
             <h3>Git</h3>
           </div>
           <div class="skill-card" data-aos="fade-up" data-aos-delay="450">
-            <img src="logo/github.webp" alt="GitHub Logo">
+            <img src="logo/github.webp" alt="GitHub Logo" width="50" height="50" loading="lazy">
             <h3>GitHub</h3>
           </div>
         </div>
@@ -149,7 +190,7 @@
           
           <article class="project-card" data-aos="fade-up">
             <div class="project-image-wrapper">
-              <img src="Projects/the_updated_picture.webp" alt="Digital Agency Business Website Screenshot" loading="lazy">
+              <img src="Projects/the_updated_picture.webp" alt="Digital Agency Business Website Screenshot" width="800" height="450" loading="lazy">
             </div>
             <div class="project-content">
               <h3>Digital Agency Business Website</h3>
@@ -168,7 +209,7 @@
 
           <article class="project-card" data-aos="fade-up" data-aos-delay="200">
             <div class="project-image-wrapper">
-              <img src="Projects/E-Commerce with Loyalty Points.webp" alt="Hot Deals E-Commerce Screenshot" loading="lazy">
+              <img src="Projects/E-Commerce with Loyalty Points.webp" alt="Hot Deals E-Commerce Screenshot" width="800" height="450" loading="lazy">
             </div>
             <div class="project-content">
               <h3>Hot Deals E-Commerce</h3>
@@ -186,7 +227,7 @@
 
           <article class="project-card" data-aos="fade-up" data-aos-delay="300">
             <div class="project-image-wrapper">
-              <img src="Projects/quranKareem.webp" alt="Quran Kareem App Screenshot" loading="lazy">
+              <img src="Projects/quranKareem.webp" alt="Quran Kareem App Screenshot" width="800" height="450" loading="lazy">
             </div>
             <div class="project-content">
               <h3>Quran Kareem</h3>
@@ -204,7 +245,7 @@
 
           <article class="project-card" data-aos="fade-up" data-aos-delay="400">
             <div class="project-image-wrapper">
-              <img src="Projects/sebha.webp" alt="Sebha Tasbeeh Counter Screenshot" loading="lazy">
+              <img src="Projects/sebha.webp" alt="Sebha Tasbeeh Counter Screenshot" width="800" height="450" loading="lazy">
             </div>
             <div class="project-content">
               <h3>Sebha | سبحة</h3>
@@ -222,7 +263,7 @@
 
           <article class="project-card" data-aos="fade-up" data-aos-delay="500">
             <div class="project-image-wrapper">
-              <img src="Projects/Ocean-pearl-hotel.webp" alt="Ocean Pearl Hotel Screenshot" loading="lazy">
+              <img src="Projects/Ocean-pearl-hotel.webp" alt="Ocean Pearl Hotel Screenshot" width="800" height="450" loading="lazy">
             </div>
             <div class="project-content">
               <h3>Ocean Pearl Hotel</h3>
@@ -246,7 +287,7 @@
       <div class="container">
         <h2 data-aos="zoom-in">About Me</h2>
         <div class="about-content" data-aos="fade-up">
-          <img src="My Picture.webp" alt="Youssef Atef Portrait" loading="lazy">
+          <img src="My Picture.webp" alt="Youssef Atef Portrait" width="300" height="300" loading="lazy">
           <div class="about-text">
             <p>
               I am a <strong>Front End React Developer</strong> focused on building responsive and user-friendly web applications using modern JavaScript technologies.
@@ -268,15 +309,15 @@
         <form class="contact-form" data-aos="zoom-in" action="https://formsubmit.co/hh3928850@gmail.com" method="POST">
           <div class="form-group">
             <label for="name" class="form-label">Your Name</label>
-            <input type="text" id="name" name="name" class="form-control" placeholder="John Doe" required>
+            <input type="text" id="name" name="name" class="form-control" placeholder="John Doe" autocomplete="name" required>
           </div>
           <div class="form-group">
             <label for="phone_number" class="form-label">Phone Number (Optional)</label>
-            <input type="tel" id="phone_number" name="phone_number" class="form-control" placeholder="+1 (555) 000-0000">
+            <input type="tel" id="phone_number" name="phone_number" class="form-control" placeholder="+1 (555) 000-0000" autocomplete="tel">
           </div>
           <div class="form-group">
             <label for="email" class="form-label">Email Address</label>
-            <input type="email" id="email" name="email" class="form-control" placeholder="john@example.com" required>
+            <input type="email" id="email" name="email" class="form-control" placeholder="john@example.com" autocomplete="email" required>
           </div>
           <div class="form-group">
             <label for="message" class="form-label">Your Message</label>

@@ -6,17 +6,15 @@
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
-
 <url>
   <loc>https://youssef-atef-portfolio.vercel.app/</loc>
-  <lastmod>2026-03-07T03:27:37+00:00</lastmod>
+  <lastmod>2026-07-21T00:00:00+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://youssef-atef-portfolio.vercel.app/Youssef%20Atef%20React%20Frontend%20Developer%20Cv.pdf</loc>
-  <lastmod>2026-03-07T03:27:38+00:00</lastmod>
+  <loc>https://youssef-atef-portfolio.vercel.app/Youssef%20Atef%20React%20Frontend%20Developer%20CV.pdf</loc>
+  <lastmod>2026-07-21T00:00:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
-
 
 </urlset>
