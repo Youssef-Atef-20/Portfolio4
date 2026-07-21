@@ -58,8 +58,13 @@
 <body>
 
   <header class="header-nav" data-aos="fade-down">
-    <nav aria-label="Primary Navigation">
-      <ul class="nav-list" role="list">
+    <nav aria-label="Primary Navigation" class="nav-container">
+      <button class="mobile-menu-toggle" aria-label="Toggle Menu" id="mobile-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-list" id="nav-list" role="list">
         <li><a href="#home" class="nav-link">Home</a></li>
         <li><a href="#skills" class="nav-link">Skills</a></li>
         <li><a href="#projects" class="nav-link">Projects</a></li>
@@ -302,6 +307,19 @@
 
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
+    // Mobile Menu Toggle
+    const mobileToggle = document.getElementById('mobile-toggle');
+    const navList = document.getElementById('nav-list');
+    const headerNav = document.querySelector('.header-nav');
+
+    if (mobileToggle) {
+      mobileToggle.addEventListener('click', () => {
+        navList.classList.toggle('active');
+        headerNav.classList.toggle('expanded');
+        mobileToggle.classList.toggle('active');
+      });
+    }
+
     // Initialize Animate On Scroll
     AOS.init({
       duration: 800,
@@ -314,6 +332,14 @@
     document.querySelectorAll('.nav-link').forEach(anchor => {
       anchor.addEventListener('click', function (e) {
         e.preventDefault();
+        
+        // Close mobile menu if open
+        if (navList && navList.classList.contains('active')) {
+          navList.classList.remove('active');
+          headerNav.classList.remove('expanded');
+          mobileToggle.classList.remove('active');
+        }
+
         const targetId = this.getAttribute('href');
         if (targetId === '#home') {
           window.scrollTo({ top: 0, behavior: 'smooth' });
