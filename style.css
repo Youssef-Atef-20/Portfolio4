@@ -168,7 +168,7 @@ p {
   background-color: transparent;
   color: var(--color-accent);
   border: 2px solid var(--color-accent);
-  justify-self: center;
+  text-align: center;
 }
 
 .btn-secondary:hover {
