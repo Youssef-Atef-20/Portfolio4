@@ -168,6 +168,9 @@ p {
   background-color: transparent;
   color: var(--color-accent);
   border: 2px solid var(--color-accent);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .btn-secondary:hover {
