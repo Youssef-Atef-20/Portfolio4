@@ -168,10 +168,7 @@ p {
   background-color: transparent;
   color: var(--color-accent);
   border: 2px solid var(--color-accent);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-self: center;
 }
 
 .btn-secondary:hover {
